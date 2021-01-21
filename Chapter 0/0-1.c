@@ -30,16 +30,19 @@ int main() {
     return 0;
 }
 
+// 두 정수 중 최댓값
 int max(int x, int y) {
     if (x >= y) return x;
     else return y;
 }
 
+// 두 정수 중 최솟값
 int min(int x, int y) {
     if (x <= y) return x;
     else return y;
 }
 
+// 배열 내 정수 중 최댓값
 int max_arr(int arr[], int length) {
     int maxArr = arr[0];
     int i;
@@ -53,6 +56,7 @@ int max_arr(int arr[], int length) {
     return maxArr;
 }
 
+// 배열 내 정수 중 최솟값
 int min_arr(int arr[], int length) {
     int minArr = arr[0];
     int i;
