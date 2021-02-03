@@ -14,10 +14,9 @@ int pay(int money, int bills[], int n) {
 
     if (n == 1) {
         if (money % bills[0] == 0) {
-            printf("%d * %d\n", bills[0], money/bills[0]);
+            printf("%d * %d\n", bills[0], money / bills[0]);
             return 1;
-        }
-        else{
+        } else {
             return 0;
         }
     }
@@ -25,7 +24,7 @@ int pay(int money, int bills[], int n) {
     t = money / bills[n - 1]; // 현재 계산중인 금액권을 사용할 수 있는 최대 개수
 
     for (i = 0; i <= t; i++) {
-        printf("%d * %d, ",bills[n-1], i);
+        printf("%d * %d, ", bills[n - 1], i);
         count += pay(money - bills[n - 1] * i, bills, n - 1);
     }
 
