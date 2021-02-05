@@ -15,7 +15,7 @@ long factorial(int n) {
     return r;
 }
 
-// 재귀적 방
+// 재귀적 방법
 long factorial_recursive(int n) {
     if (n == 1) return 1;
     else return n * factorial_recursive(n - 1);
