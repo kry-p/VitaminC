@@ -39,7 +39,15 @@ long long path_counter_2(long long **map, int m, int n) {
         }
     }
 
-    return path[m - 1][n - 1];
+    long long result = path[m - 1][n - 1];
+
+    // 동적 할당된 메모리 해제
+    for (int i = 0; i < n; i++)
+        free(path[i]);
+
+    free(path);
+
+    return result;
 }
 
 int main() {
