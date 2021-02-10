@@ -26,9 +26,9 @@ int main() {
     int i;
     printf("배열 내 두 변수 바꾸기 결과 : ");
     for (i = 0; i < 5; i++) {
-        if(i < 4){
+        if (i < 4) {
             printf("%d, ", arr[i]);
-        }else printf("%d", arr[i]);
+        } else printf("%d", arr[i]);
     }
 
     return 0;

@@ -32,12 +32,12 @@ int main() {
         work += 1;
     }
 
-    double percentage=(((double)(rep-count)/rep)*100);
+    double percentage = (((double) (rep - count) / rep) * 100);
 
     printf("혼난 사건의 수 : %d\n", count);
     printf("혼나지 않은 사건의 수 : %d\n", rep - count);
 
-    printf("혼나지 않을 확률 : %.2f%%",percentage);
+    printf("혼나지 않을 확률 : %.2f%%", percentage);
 
     return 0;
 }

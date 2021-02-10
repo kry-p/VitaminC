@@ -14,7 +14,7 @@ void print_arr(int arr[], int size) {
 int main() {
     int arr[] = {1, 5, 2, 3, 7, 6};
 
-    print_arr(arr,6);
+    print_arr(arr, 6);
 
     return 0;
 }

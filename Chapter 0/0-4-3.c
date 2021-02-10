@@ -9,10 +9,10 @@
 int stack[STACK_CAPACITY];
 int position = -1;
 
-void push(int n){
-    if (position >= STACK_CAPACITY-1){
+void push(int n) {
+    if (position >= STACK_CAPACITY - 1) {
         printf("스택이 꽉 찼습니다.\n");
-    }else{
+    } else {
         position += 1;
         stack[position] = n;
 
@@ -20,11 +20,11 @@ void push(int n){
     }
 }
 
-void pop(){
+void pop() {
     if (position < 0) {
         printf("스택이 비어 있습니다.\n");
         position = -1;
-    }else{
+    } else {
         printf("[%d]이(가) pop 되었습니다.\n", stack[0]);
         stack[0] = 0;
         position -= 1;
@@ -56,8 +56,8 @@ int main() {
         }
 
         int i;
-        for(i = 0; i < 8; i++){
-            printf("%d ",stack[i]);
+        for (i = 0; i < 8; i++) {
+            printf("%d ", stack[i]);
         }
         printf("\n\n");
 
