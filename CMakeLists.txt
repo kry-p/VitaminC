@@ -3,4 +3,4 @@ project(VitaminC)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(VitaminC "Chapter 1/1-e.c")
+add_executable(VitaminC "Chapter 2/2-2.c")
