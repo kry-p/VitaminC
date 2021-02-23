@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void dist_nat(int m, int n, int arr[], int index) {
+void calculate_return_all(int m, int n, int *arr, int index) {
     int i;
 
     // 종료조건
